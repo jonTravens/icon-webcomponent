@@ -1,0 +1,29 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Button with Icon</title>
+  <!-- Ajouter le CDN de Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" src="icon-component.js" defer></script>
+  <style>
+    /* Ajouter du style personnalisé pour l'exemple */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Utiliser le composant d'icône avec le bouton -->
+  <button class="flex items-center bg-indigo-500 text-white p-2 rounded">
+    <icon-component icon="bell" size="24"></icon-component>
+    <span class="ml-2">Mon Bouton</span>
+  </button>
+</html>
